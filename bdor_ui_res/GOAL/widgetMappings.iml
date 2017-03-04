@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgetMappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ingenico.com/schemas/widgetmappings/1_0">
+  <widgetMapping idname="DATE_SCREEN_EDIT_DATE" idval="1"/>
+  <widgetMapping idname="DATE_SCREEN_BUTTON_OK" idval="2"/>
+  <widgetMapping idname="GENERIC_BUTTON_CANCEL" idval="3"/>
+  <widgetMapping idname="PIN_ENTRY__MAIN_MESSAGE" idval="4"/>
+  <widgetMapping idname="PIN_ENTRY_MASK" idval="5"/>
+  <widgetMapping idname="PIN_ENTRY__TX_TYPE" idval="6"/>
+  <widgetMapping idname="PIN_ENTRY__AMOUNT" idval="7"/>
+  <widgetMapping idname="PIN_ENTRY__HELP_MESSAGE" idval="8"/>
+  <widgetMapping idname="TEST_HOST__PROGRESS_MESSAGE" idval="9"/>
+  <widgetMapping idname="TEST_HOST__NB_ERROR_MESSAGE" idval="10"/>
+  <widgetMapping idname="REVIEW_TX_TYPE" idval="11"/>
+  <widgetMapping idname="REVIEW_CARD_TYPE" idval="12"/>
+  <widgetMapping idname="REVIEW_MASKED_PAN" idval="13"/>
+  <widgetMapping idname="REVIEW_MASKED_EXPIRY_DATE" idval="14"/>
+  <widgetMapping idname="REVIEW_TX_AMOUNT" idval="15"/>
+  <widgetMapping idname="REVIEW_AUTH_CODE" idval="16"/>
+  <widgetMapping idname="REVIEW_TX_STAN" idval="17"/>
+  <widgetMapping idname="REVIEW_TX_TIMEOUT_TIMER" idval="18"/>
+  <widgetMapping idname="BATCH_TOTAL_HOST_NAME" idval="19"/>
+  <widgetMapping idname="BATCH_TOTAL_SALES_TOTAL" idval="20"/>
+  <widgetMapping idname="BATCH_TOTAL_REFUND_TOTAL" idval="21"/>
+  <widgetMapping idname="BATCH_TOTAL_GRAND_TOTAL" idval="22"/>
+  <widgetMapping idname="BATCH_TOTAL_TIMEOUT_TIMER" idval="24"/>
+  <widgetMapping idname="BATCH_TOTAL_SALE_COUNT" idval="25"/>
+  <widgetMapping idname="BATCH_TOTAL_REFUND_COUNT" idval="26"/>
+  <widgetMapping idname="BATCH_TOTAL_TOTAL_COUNT" idval="27"/>
+  <widgetMapping idname="CLESS_LOGO" idval="28"/>
+  <widgetMapping idname="CARDENTRY_MESSAGE" idval="29"/>
+</widgetMappings>

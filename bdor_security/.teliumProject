@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?teliumProject version="7.0"?><?ingedev version="8.4.2.0"?><projectDescription activeConfig="GNU_ARM_DEBUG_T2" enableUsingCpp="true" projectType="LIB">
+<virtualFolders>
+<virtualFolder name="Other Files" sources="false"/>
+<virtualFolder name="Source Files" sources="true">
+<file generated="false" name="Src\host_security.cpp" parentProject=""/>
+</virtualFolder>
+</virtualFolders>
+<exportedHeaders>
+<exportedHeader name="ExpInc"/>
+</exportedHeaders>
+<configs>
+<config archiverCustomOpts="" asmCpuMode="thumb" binaryName="bdor_security" compiler="gnuArm47xbm" compilerCustomOpt="--std=c++11" cpuMode="thumb" crc="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" name="GNU_ARM_DEBUG_T2" sign="false" zip="false">
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="ExpInc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<dataFiles/>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<teliumAddonPackages>
+<teliumAddonPackage package="APAC_Addon" version="1.5.38"/>
+</teliumAddonPackages>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<externalSchemes/>
+</config>
+<config archiverCustomOpts="" asmCpuMode="thumb" binaryName="bdor_security" compiler="gnuArm47xbm" compilerCustomOpt="--std=c++11" cpuMode="thumb" crc="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" name="GNU_ARM_DEBUG_T2_SOURCELIB" sign="false" zip="false">
+<userIncs>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/crypto/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="Inc"/>
+<userInc value="ExpInc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<dataFiles/>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<externalSchemes/>
+</config>
+<config archiverCustomOpts="" asmCpuMode="thumb" binaryName="bdor_security" compiler="gnuArm47v7a" cpuMode="thumb" crc="false" enableCPPExceptions="true" gcov="false" gnuOptim="-O0" gprof="false" name="GNU_ARM_DEBUG_TETRA" sign="false" zip="false">
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="ExpInc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<prebuild/>
+<postbuild/>
+</config>
+<config archiverCustomOpts="" asmCpuMode="thumb" binaryName="bdor_security" compiler="gnuArm4" compilerCustomOpt="" cpuMode="thumb" enableCPPExceptions="true" gnu4StackProtectionMode="ProPolice" gnuOptim="-Os" name="GNU_ARM_RELEASE_T2">
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="ExpInc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<prebuild/>
+<postbuild/>
+</config>
+<config archiverCustomOpts="" asmCpuMode="thumb" binaryName="bdor_security" compiler="gnuArm47v7a" cpuMode="thumb" enableCPPExceptions="true" gcov="false" gnuOptim="-Os" gprof="false" name="GNU_ARM_RELEASE_TETRA">
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="ExpInc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<prebuild/>
+<postbuild/>
+</config>
+</configs>
+<groupConfigs/>
+</projectDescription>

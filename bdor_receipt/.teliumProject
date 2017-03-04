@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?teliumProject version="7.0"?><?ingedev version="8.4.2.0"?><projectDescription activeConfig="GNU_ARM_DEBUG_T2" enableUsingCpp="true" projectType="LIB">
+<virtualFolders>
+<virtualFolder name="Other Files" sources="false"/>
+<virtualFolder name="Source Files" sources="true">
+<file generated="false" name="Src\receipt_header.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_transaction_header.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_cvm.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_settlement_footer.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_settlement_header.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_formatter.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_detail_report_header.cpp" parentProject=""/>
+<file generated="false" name="Src\goal_receipts.cpp" parentProject=""/>
+<file generated="false" name="Src\void_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\reversal_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\sale_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\preauth_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\refund_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\preauth_completion_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\offline_sale_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\tip_adjust_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\emv_report_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\terminal_initialization_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\duplicate_receipt_header.cpp" parentProject=""/>
+<file generated="false" name="Src\receipts.cpp" parentProject=""/>
+<file generated="false" name="Src\preauth_cancellation_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_settlement_host.cpp" parentProject=""/>
+<file generated="false" name="Src\settlement_single_host_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_settlement_totals.cpp" parentProject=""/>
+<file generated="false" name="Src\settlement_all_hosts_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_footer.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_utils.cpp" parentProject=""/>
+<file generated="false" name="Src\instalment_sale_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\detail_report_receipt.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_detail_transaction.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_detail_report_footer.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_detail_total.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_settlement_version.cpp" parentProject=""/>
+</virtualFolder>
+</virtualFolders>
+<exportedHeaders>
+<exportedHeader name="ExpInc"/>
+</exportedHeaders>
+<configs>
+<config asmCpuMode="thumb" assemblerCustomOpt="" binaryName="bdor_receipt" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" name="GNU_ARM_DEBUG_T2" sign="false" zip="false">
+<userIncs>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<dataFiles/>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<externalSchemes/>
+<postbuild command="" description=""/>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+<userAsmDefines/>
+<userAsmIncs/>
+<teliumAddonPackages>
+<teliumAddonPackage package="APAC_Addon" version="1.5.38"/>
+</teliumAddonPackages>
+</config>
+<config asmCpuMode="thumb" assemblerCustomOpt="" binaryName="bdor_receipt" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" name="GNU_ARM_DEBUG_T2_SOURCELIB" sign="false" zip="false">
+<userIncs>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/amex_host/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<dataFiles/>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<externalSchemes/>
+<postbuild command="" description=""/>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+<userAsmDefines/>
+<userAsmIncs/>
+</config>
+<config asmCpuMode="thumb" binaryName="bdor_receipt" compiler="gnuArm47v7a" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" enableCPPExceptions="true" gcov="false" gnuOptim="-O0" gprof="false" name="GNU_ARM_DEBUG_TETRA" sign="false" zip="false">
+<userIncs>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/amex_host/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<dataFiles/>
+<userAsmIncs/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<externalSchemes/>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.10.1.01"/>
+</teliumSdkPackages>
+</config>
+<config asmCpuMode="thumb" binaryName="bdor_receipt" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" enableCPPExceptions="true" gnu4StackProtectionMode="ProPolice" gnuOptim="-Os" name="GNU_ARM_RELEASE_T2">
+<userIncs>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/amex_host/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<dataFiles/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<externalSchemes/>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+</config>
+<config asmCpuMode="thumb" binaryName="bdor_receipt" compiler="gnuArm47v7a" compilerCustomOpt="-std=c++11" cpuMode="thumb" enableCPPExceptions="true" gcov="false" gnuOptim="-Os" gprof="false" name="GNU_ARM_RELEASE_TETRA">
+<userIncs>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<dataFiles/>
+<userAsmIncs/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<externalSchemes/>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.10.1.01"/>
+</teliumSdkPackages>
+</config>
+</configs>
+<groupConfigs/>
+</projectDescription>

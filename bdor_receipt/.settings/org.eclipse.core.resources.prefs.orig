@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+<<<<<<< 25b55d531e9a2c4d6c5b26f39a97ba5dc859d3e5
+encoding//Src/preauth_cancellation_receipt.cpp=UTF-8
+=======
+encoding//Src/offline_sale_receipt.cpp=UTF-8
+>>>>>>> FDMS-36: Create Offline Sale receipt and review layout of Sale receipt

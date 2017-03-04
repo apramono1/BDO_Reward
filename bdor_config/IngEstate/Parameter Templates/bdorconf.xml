@@ -1,0 +1,795 @@
+<template xmlns="http://www.ingenico.com/ingestate/paramTemplate"
+	id="bdor_config" name="bdor_config" description="FDMS Parameters"
+	version="00001">
+
+	<fields>
+		<!-- TERMINAL CONFIGURATION -->
+		<dataField id="TerminalBaseCurrencyCode" name="Terminal Base Currency Code"
+			access="READWRITE" type="numeric" minLength="1" maxLength="3"
+			defaultValue="999" />
+			
+		<dataField id="MinimumAmount" name="Minimum Amount"
+			access="READWRITE" type="numeric" minLength="1" maxLength="12"
+			defaultValue="0" />
+		<dataField id="MaximumAmount" name="Maximum Amount"
+			access="READWRITE" type="numeric" minLength="1" maxLength="12"
+			defaultValue="0" />
+			
+		<dataField id="OfflineSaleMaxAmount" name="Maximum Offline Amount"
+			access="READWRITE" type="numeric" minLength="1" maxLength="12"
+			defaultValue="0" />
+		<choiceField id="SaleContactlessEnabled" name="Contactless Sale" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+
+		<dataField id="ReceiptHeaderLine1" name="Header Line 1" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="100" defaultValue="" />
+		<dataField id="ReceiptHeaderLine2" name="Header Line 2" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="100" defaultValue="" />
+		<dataField id="ReceiptHeaderLine3" name="Header Line 3" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="100" defaultValue="" />
+		<dataField id="ReceiptHeaderLine4" name="Header Line 4" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="100" defaultValue="" />
+		<dataField id="ReceiptHeaderLine5" name="Header Line 5" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="100" defaultValue="" />
+		<dataField id="InstalmentReceiptDescription" name="Instalment Receipt Description" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="200" defaultValue="" />
+
+		<choiceField id="TipProcessingMode" name="Tip Processing Mode" type="SINGLE"
+			defaultValue="0" access="READWRITE">
+			<choiceValue label="TIP Disabled" value="0" />
+			<choiceValue label="TIP Prompted and Printed" value="1" />
+			<choiceValue label="TIP Printed only" value="2" />
+		</choiceField>
+		<dataField id="TipAdjustMaxNumber" name="TIP Adjust - Max number of Adjust" access="READONLY"
+			type="numeric" minLength="0" maxLength="2" defaultValue="1" />
+		<dataField id="TipAdjustMaxVariance" name="TIP Adjust - Max Variance (%)" access="READWRITE"
+			type="numeric" minLength="0" maxLength="3" defaultValue="20" />
+
+		<choiceField id="PreAuthClearPolicy" name="PreAuth Clear Policy during Settlement" type="SINGLE"
+			defaultValue="0" access="READWRITE">
+			<choiceValue label="No clearing without prompt" value="0" />
+			<choiceValue label="Clearing without prompt" value="1" />
+			<choiceValue label="Prompt and clear if requested" value="2" />
+		</choiceField>
+
+		<dataField id="PreAuthMaxAge" name="PreAuth max age (days)" access="READWRITE"
+			type="numeric" minLength="0" maxLength="3" defaultValue="30" />
+
+		<dataField id="PreAuthCompletionAllowedVariance" name="PreAuth Completion Variance (%)" access="READWRITE"
+			type="numeric" minLength="0" maxLength="3" defaultValue="0" />
+
+		<dataField id="SupervisorPassword" name="Supervisor Password" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="100" defaultValue="" />
+		<dataField id="ManagerPassword" name="Manager Password" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="100" defaultValue="" />
+
+		<choiceField id="VoidPasswordLevel" name="Void Password Level" type="SINGLE"
+			defaultValue="2" access="READWRITE">
+			<choiceValue label="Manager" value="1" />
+			<choiceValue label="Supervisor" value="2" />
+			<choiceValue label="Access Freely" value="3" />
+		</choiceField>
+		<choiceField id="RefundPasswordLevel" name="Refund Password Level" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Manager" value="1" />
+			<choiceValue label="Supervisor" value="2" />
+			<choiceValue label="Access Freely" value="3" />
+		</choiceField>
+		<choiceField id="OfflinePasswordLevel" name="Offline Password Level" type="SINGLE"
+			defaultValue="2" access="READWRITE">
+			<choiceValue label="Manager" value="1" />
+			<choiceValue label="Supervisor" value="2" />
+			<choiceValue label="Access Freely" value="3" />
+		</choiceField>
+		<choiceField id="SettlementPasswordLevel" name="Settlement Password Level" type="SINGLE"
+			defaultValue="2" access="READWRITE">
+			<choiceValue label="Manager" value="1" />
+			<choiceValue label="Supervisor" value="2" />
+			<choiceValue label="Access Freely" value="3" />
+		</choiceField>
+		
+		<choiceField id="TleEnabled" name="Terminal Line Encryption" type="SINGLE"
+			defaultValue="0" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+
+		<choiceField id="PiggybackEnabled" name="Piggyback Advices" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+
+		<choiceField id="SaleEnabled" name="Sale" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="PreAuthEnabled" name="PreAuth" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="PreAuthCompletionOnlineEnabled" name="PreAuth-Comp Online" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="PreAuthCompletionOfflineEnabled" name="PreAuth-Comp Offline" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="OfflineSaleEnabled" name="Offline Sale" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="RefundEnabled" name="Refund" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="VoidEnabled" name="Void" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="VoidPreAuthEnabled" name="Void PreAuth" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="MotoSaleEnabled" name="MOTO Sale" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="MotoRefundEnabled" name="MOTO Refund" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="MotoPreauthEnabled" name="MOTO Preauth" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="InstalmentSaleEnabled" name="Instalment Sale" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="SettleAllHostEnabled" name="Settle All Host" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+
+		<choiceField id="EmvEnabled" name="EMV" type="SINGLE" defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<choiceField id="InstalmentDataToHostEnabled" name="Instalment Data To Host" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+
+		<dataField id="TerminalIdMasking" name="Terminal Id Mask" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="8" defaultValue="" />
+		<dataField id="MerchantIdMasking" name="Merchant Id Mask" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="15" defaultValue="" />
+
+		<dataField id="RefundMaxAmount" name="Refund Max Amount" access="READWRITE"
+			type="numeric" minLength="0" maxLength="12" defaultValue="" />
+		<dataField id="RefundPasswordFloorLimit" name="Refund Password Floor Limit" access="READWRITE"
+			type="numeric" minLength="0" maxLength="12" defaultValue="" />
+		<choiceField id="RefundClessEnabled" name="Contactless Refund" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		
+		<choiceField id="DccEnabled" name="DCC" type="SINGLE"
+			defaultValue="0" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		
+		<choiceField id="DccProviderOption" name="DCC Provider" type="SINGLE"
+			defaultValue="0" access="READWRITE">
+			<choiceValue label="Fexco" value="0" />
+			<choiceValue label="Pure Commerce" value="1" />
+			<choiceValue label="Fintrax" value="2" />
+		</choiceField>
+		
+		<choiceField id="DccStaffIdInputEnabled" name="DCC Staff Id Input" type="SINGLE"
+			defaultValue="1" access="READWRITE">
+			<choiceValue label="Disabled" value="0" />
+			<choiceValue label="Enabled" value="1" />
+		</choiceField>
+		<dataField id="IdleMessage" name="Idle Message" access="READWRITE"
+			type="alphanumeric" minLength="0" maxLength="200" defaultValue="" />
+
+		<!-- HOST TABLE -->
+		<structureField id="Hosts" name="Hosts" access="READWRITE"
+			minRows="0" maxRows="300" uniqueKeys="HostIndex">
+
+			<dataField id="HostIndex" name="Index" access="READWRITE"
+				type="numeric" minLength="0" maxLength="3" defaultValue="" />
+			<dataField id="HostName" name="Host Name" access="READWRITE" type="alphanumeric"
+				minLength="1" maxLength="100" defaultValue="" />
+			<choiceField id="HostProtocol" name="Host Protocol" type="SINGLE"
+				defaultValue="0" access="READWRITE">
+				<choiceValue label="FDMS BASE 24" value="0" />
+				<choiceValue label="AMEX DIRECT" value="1" />
+			</choiceField>
+			<dataField id="CommsHostName" name="Comms Host Name" access="READWRITE" type="alphanumeric"
+				minLength="1" maxLength="100" defaultValue="" />
+
+			<dataField id="TerminalId" name="Terminal ID" access="READWRITE" type="alphanumeric"
+				minLength="1" maxLength="8" defaultValue="" />
+			<dataField id="MerchantId" name="Merchant ID" access="READWRITE" type="alphanumeric"
+				minLength="1" maxLength="15" defaultValue="" />
+
+			<dataField id="SettlementTpdu" name="Settlement TPDU (hex)" access="READWRITE" type="hexadecimal"
+				minLength="0" maxLength="100" defaultValue="6000310000" />
+			<dataField id="SettlementNii" name="Settlement Nii" access="READWRITE" type="hexadecimal"
+				minLength="0" maxLength="4" defaultValue="031" />
+
+			<choiceField id="BatchUploadEnabled" name="Batch Upload" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+
+			<dataField id="HostTimeout" name="Global Timeout (ms)" access="READWRITE" type="numeric"
+				minLength="1" maxLength="20" defaultValue="30000" />
+			<dataField id="PreDefinedAuthCode" name="Auth Code for Offline Sale" access="READWRITE" type="alphanumeric"
+				minLength="0" maxLength="6" defaultValue="" />
+			<choiceField id="PredialEnabled" name="Predial" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+		</structureField>
+
+		<!-- ISSUER TABLE -->
+		<structureField id="Issuers" name="Issuers" access="READWRITE"
+			minRows="0" maxRows="300" uniqueKeys="IssuerIndex">
+
+			<dataField id="IssuerIndex" name="Index" access="READWRITE"
+				type="numeric" minLength="0" maxLength="3" defaultValue="" />
+			<dataField id="IssuerName" name="Issuer Name" access="READWRITE" type="alphanumeric"
+				minLength="1" maxLength="100" defaultValue="" />
+				
+			<dataField id="Tpdu" name="TPDU (hex)" access="READWRITE" type="hexadecimal"
+				minLength="0" maxLength="100" defaultValue="" />
+			<dataField id="Nii" name="Nii" access="READWRITE" type="hexadecimal"
+				minLength="0" maxLength="4" defaultValue="" />
+
+			<dataField id="PanMaskDisplay" name="Pan Mask for Display" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="30" defaultValue="" />
+			<dataField id="PanMaskMerchantReceipt" name="Pan Mask for Merchant Receipt" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="30" defaultValue="" />
+			<dataField id="PanMaskCustomerReceipt" name="Pan Mask for Customer Receipt" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="30" defaultValue="" />
+
+			<dataField id="ExpiryDateMaskDisplay" name="Expiry Date for Display" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="30" defaultValue="" />
+			<dataField id="ExpiryDateMaskMerchantReceipt" name="Expiry Date for Merchant Receipt" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="30" defaultValue="" />
+			<dataField id="ExpiryDateMaskCustomerReceipt" name="Expiry Date for Customer Receipt" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="30" defaultValue="" />
+		</structureField>
+
+		<!-- CARD TABLE -->
+		<structureField id="Cards" name="Cards" access="READWRITE"
+			minRows="0" maxRows="999" uniqueKeys="CardIndex">
+
+			<dataField id="CardIndex" name="Index" access="READWRITE"
+				type="numeric" minLength="0" maxLength="3" defaultValue="" />
+
+			<dataField id="PanLowRange" name="Pan Low Range" access="READWRITE"
+				type="numeric" minLength="0" maxLength="20" defaultValue="" />
+			<dataField id="PanHighRange" name="Pan High Range" access="READWRITE"
+				type="numeric" minLength="0" maxLength="20" defaultValue="" />
+			<dataField id="PanMinLength" name="Pan Min Length" access="READWRITE"
+				type="numeric" minLength="1" maxLength="2" defaultValue="1" />
+			<dataField id="PanMaxLength" name="Pan Max Length" access="READWRITE"
+				type="numeric" minLength="1" maxLength="2" defaultValue="19" />
+
+			<dynamicChoiceField id="CardHostIndex" name="Host Index" access="READWRITE"
+				refFieldId="Hosts" refLabel="HostName" refValue="HostIndex"/>
+			<dynamicChoiceField id="CardMotoHostIndex" name="MOTO Host Index" access="READWRITE"
+				refFieldId="Hosts" refLabel="HostName" refValue="HostIndex"/>
+			<dynamicChoiceField id="CardIssuerIndex" name="Issuer" access="READWRITE"
+				refFieldId="Issuers" refLabel="IssuerName" refValue="IssuerIndex"/>
+
+			<dataField id="FloorLimit" name="Floor Limit" access="READWRITE"
+				type="numeric" minLength="0" maxLength="12" defaultValue="" />
+			<dataField id="MotoFloorLimit" name="MOTO Floor Limit" access="READWRITE"
+				type="numeric" minLength="0" maxLength="12" defaultValue="" />
+			<dataField id="QpsFloorLimit" name="QPS Floor Limit" access="READWRITE"
+				type="numeric" minLength="0" maxLength="12" defaultValue="" />
+
+			<choiceField id="CvvManualEntry" name="CVV for Manual Entry" type="SINGLE"
+				defaultValue="0" access="READWRITE">
+				<choiceValue label="No CVV prompt" value="0" />
+				<choiceValue label="CVV prompt and allow bypass" value="1" />
+				<choiceValue label="CVV prompt and no bypass" value="2" />
+			</choiceField>
+			<choiceField id="CvvMotoSale" name="CVV for MOTO Sale" type="SINGLE"
+				defaultValue="0" access="READWRITE">
+				<choiceValue label="No CVV prompt" value="0" />
+				<choiceValue label="CVV prompt and allow bypass" value="1" />
+				<choiceValue label="CVV prompt and no bypass" value="2" />
+			</choiceField>
+			<choiceField id="CvvMagstripeEntry" name="CVV for Magstripe Entry" type="SINGLE"
+				defaultValue="0" access="READWRITE">
+				<choiceValue label="No CVV prompt" value="0" />
+				<choiceValue label="CVV prompt and allow bypass" value="1" />
+				<choiceValue label="CVV prompt and no bypass" value="2" />
+			</choiceField>
+
+			<choiceField id="CardSaleEnabled" name="Sale" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardPreAuthEnabled" name="PreAuth" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardOfflineSaleEnabled" name="Offline Sale" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardRefundEnabled" name="Refund" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardVoidEnabled" name="Void" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardVoidPreAuthEnabled" name="Void Preauth" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="PreAuthCompOnlineEnabled" name="Preauth-Comp Online" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="PreAuthCompOfflineEnabled" name="Preauth-Comp Offline" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardMotoSaleEnabled" name="MOTO Sale" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardMotoRefundEnabled" name="MOTO Refund" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardMotoPreauthEnabled" name="MOTO Preauth" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="CardInstalmentSaleEnabled" name="Instalment Sale" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="LuhnCheckRequired" name="Luhn check" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			<choiceField id="ManualEntryEnabled" name="Manual Entry" type="SINGLE"
+				defaultValue="1" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+			
+			<choiceField id="CardDccEnabled" name="DCC" type="SINGLE"
+				defaultValue="0" access="READWRITE">
+				<choiceValue label="Disabled" value="0" />
+				<choiceValue label="Enabled" value="1" />
+			</choiceField>
+		</structureField>
+		
+		<!-- INSTALMENT TABLE -->
+		<structureField id="Instalments" name="Instalments" access="READWRITE"
+			minRows="0" maxRows="300" uniqueKeys="InstalmentIndex">
+
+			<dataField id="InstalmentIndex" name="Index" access="READWRITE"
+				type="numeric" minLength="1" maxLength="3" defaultValue="" />
+				
+			<dataField id="InstalmentDescription" name="Description" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="20" defaultValue="" />
+			<dataField id="InstalmentPeriod" name="Instalment Period (Months)" access="READWRITE"
+				type="numeric" minLength="1" maxLength="2" defaultValue="" />
+				
+			<choiceField id="InstalmentOnUSOFFUS" name="Instalment type" type="SINGLE"
+				defaultValue="0" access="READWRITE">
+				<choiceValue label="Non SCB" value="0" />
+				<choiceValue label="SCB" value="1" />
+			</choiceField>
+				
+			<dataField id="InstalmentMinAmount" name="Instalment Minimum Amount (cents)" access="READWRITE"
+				type="numeric" minLength="1" maxLength="12" defaultValue="0" />
+			<dataField id="InstalmentMaxAmount" name="Instalment Maximum Amount (cents)" access="READWRITE"
+				type="numeric" minLength="1" maxLength="12" defaultValue="0" />
+					
+			<dataField id="InstalmentStartDate" name="Start Date" access="READWRITE"
+				type="alphanumeric" minLength="8" maxLength="8" defaultValue="" />
+			<dataField id="InstalmentEndDate" name="End Date" access="READWRITE"
+				type="alphanumeric" minLength="8" maxLength="8" defaultValue="" />
+				
+			<dataField id="InstalmentProgramId" name="Program ID" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="6" defaultValue="" />
+			<dataField id="InstalmentProductId" name="Product ID" access="READWRITE"
+				type="alphanumeric" minLength="0" maxLength="4" defaultValue="" />
+				
+			<dynamicChoiceField id="InstalmentHostIndex" name="Host" access="READWRITE"
+				refFieldId="Hosts" refLabel="HostName" refValue="HostIndex"/>
+		</structureField>
+		
+		<!-- AMEX CONFIGURATION -->
+		<dataField id="AmexOrigin" name="Amex Origin"
+			access="READWRITE" type="alphanumeric" minLength="1" maxLength="999"
+			defaultValue="FDMS" />
+		<dataField id="AmexCountryCode" name="Amex Country Code"
+			access="READWRITE" type="numeric" minLength="3" maxLength="3"
+			defaultValue="702" />
+		<dataField id="AmexRegion" name="Amex Region"
+			access="READWRITE" type="alphanumeric" minLength="0" maxLength="10"
+			defaultValue="JAPA" />
+		<dataField id="AmexRoutingIndicator" name="Amex Routing Indicator"
+			access="READWRITE" type="numeric" minLength="0" maxLength="10"
+			defaultValue="050" />
+	</fields>
+
+	<layout>
+		<container name="Terminal" type="TAB">
+			<fieldLayout fieldId="TerminalBaseCurrencyCode" type="TEXT" />
+			<fieldLayout fieldId="MinimumAmount" type="TEXT" />
+			<fieldLayout fieldId="MaximumAmount" type="TEXT" />
+			<fieldLayout fieldId="OfflineSaleMaxAmount" type="TEXT" />
+			<fieldLayout fieldId="SaleContactlessEnabled" type="RADIOBUTTON" />
+
+			<separatorLayout text="Receipts settings" />
+			<fieldLayout fieldId="ReceiptHeaderLine1" type="TEXT" />
+			<fieldLayout fieldId="ReceiptHeaderLine2" type="TEXT" />
+			<fieldLayout fieldId="ReceiptHeaderLine3" type="TEXT" />
+			<fieldLayout fieldId="ReceiptHeaderLine4" type="TEXT" />
+			<fieldLayout fieldId="ReceiptHeaderLine5" type="TEXT" />
+			<fieldLayout fieldId="InstalmentReceiptDescription" type="TEXT" />
+
+			<separatorLayout text="TIP settings" />
+			<fieldLayout fieldId="TipProcessingMode" type="DROPDOWN" />
+			<fieldLayout fieldId="TipAdjustMaxNumber" type="TEXT" />
+			<fieldLayout fieldId="TipAdjustMaxVariance" type="TEXT" />
+
+			<separatorLayout text="PreAuth settings" />
+			<fieldLayout fieldId="PreAuthClearPolicy" type="DROPDOWN" />
+			<fieldLayout fieldId="PreAuthMaxAge" type="TEXT" />
+			<fieldLayout fieldId="PreAuthCompletionAllowedVariance" type="TEXT" />
+
+			<separatorLayout text="Security" />
+			<fieldLayout fieldId="SupervisorPassword" type="TEXT" />
+			<fieldLayout fieldId="ManagerPassword" type="TEXT" />
+			<fieldLayout fieldId="VoidPasswordLevel" type="RADIOBUTTON" />
+			<fieldLayout fieldId="RefundPasswordLevel" type="RADIOBUTTON" />
+			<fieldLayout fieldId="OfflinePasswordLevel" type="RADIOBUTTON" />
+			<fieldLayout fieldId="SettlementPasswordLevel" type="RADIOBUTTON" />
+			<fieldLayout fieldId="TleEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="TerminalIdMasking" type="TEXT" />
+			<fieldLayout fieldId="MerchantIdMasking" type="TEXT" />
+
+			<separatorLayout text="Transactions" />
+			<fieldLayout fieldId="PiggybackEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="SaleEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="PreAuthEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="PreAuthCompletionOnlineEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="PreAuthCompletionOfflineEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="OfflineSaleEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="RefundEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="VoidEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="VoidPreAuthEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="MotoSaleEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="MotoRefundEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="MotoPreauthEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="InstalmentSaleEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="SettleAllHostEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="EmvEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="InstalmentDataToHostEnabled" type="RADIOBUTTON" />
+			
+			<fieldLayout fieldId="DccEnabled" type="RADIOBUTTON" />
+			<fieldLayout fieldId="DccProviderOption" type="RADIOBUTTON" />
+			<fieldLayout fieldId="DccStaffIdInputEnabled" type="RADIOBUTTON" />
+
+			<separatorLayout text="Refund settings" />
+			<fieldLayout fieldId="RefundMaxAmount" type="TEXT" />
+			<fieldLayout fieldId="RefundPasswordFloorLimit" type="TEXT" />
+			<fieldLayout fieldId="RefundClessEnabled" type="RADIOBUTTON" />
+
+			<separatorLayout text="Miscellaneous" />
+			<fieldLayout fieldId="IdleMessage" type="TEXT" />
+		</container>
+
+		<container name="Hosts" type="TAB">
+			<structureLayout fieldId="Hosts">
+				<fieldLayout fieldId="HostIndex" type="TEXT" />
+				<fieldLayout fieldId="HostName" type="TEXT" />
+				<fieldLayout fieldId="HostProtocol" type="DROPDOWN" />
+				<fieldLayout fieldId="CommsHostName" type="TEXT" />
+				<fieldLayout fieldId="TerminalId" type="TEXT" />
+				<fieldLayout fieldId="MerchantId" type="TEXT" />
+				<fieldLayout fieldId="SettlementTpdu" type="TEXT" />
+				<fieldLayout fieldId="SettlementNii" type="TEXT" />
+				<fieldLayout fieldId="BatchUploadEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="HostTimeout" type="TEXT" />
+				<fieldLayout fieldId="PreDefinedAuthCode" type="TEXT" />
+				<fieldLayout fieldId="PredialEnabled" type="RADIOBUTTON" />
+			</structureLayout>
+		</container>
+
+		<container name="Issuers" type="TAB">
+			<structureLayout fieldId="Issuers">
+				<fieldLayout fieldId="IssuerIndex" type="TEXT" />
+				<fieldLayout fieldId="IssuerName" type="TEXT" />
+				<fieldLayout fieldId="Tpdu" type="TEXT" />
+				<fieldLayout fieldId="Nii" type="TEXT" />
+				<fieldLayout fieldId="PanMaskDisplay" type="TEXT" />
+				<fieldLayout fieldId="PanMaskMerchantReceipt" type="TEXT" />
+				<fieldLayout fieldId="PanMaskCustomerReceipt" type="TEXT" />
+				<fieldLayout fieldId="ExpiryDateMaskDisplay" type="TEXT" />
+				<fieldLayout fieldId="ExpiryDateMaskMerchantReceipt" type="TEXT" />
+				<fieldLayout fieldId="ExpiryDateMaskCustomerReceipt" type="TEXT" />
+			</structureLayout>
+		</container>
+
+		<container name="Cards" type="TAB">
+			<structureLayout fieldId="Cards">
+				<fieldLayout fieldId="CardIndex" type="TEXT" />
+				<fieldLayout fieldId="CardIssuerIndex" type="DROPDOWN" />
+
+				<separatorLayout text="PAN details" />
+				<fieldLayout fieldId="PanLowRange" type="TEXT" />
+				<fieldLayout fieldId="PanHighRange" type="TEXT" />
+				<fieldLayout fieldId="PanMinLength" type="TEXT" />
+				<fieldLayout fieldId="PanMaxLength" type="TEXT" />
+
+				<separatorLayout text="Host settings" />
+				<fieldLayout fieldId="CardHostIndex" type="DROPDOWN" />
+				<fieldLayout fieldId="CardMotoHostIndex" type="DROPDOWN" />
+
+				<separatorLayout text="Floor limits" />
+				<fieldLayout fieldId="FloorLimit" type="TEXT" />
+				<fieldLayout fieldId="MotoFloorLimit" type="TEXT" />
+				<fieldLayout fieldId="QpsFloorLimit" type="TEXT" />
+
+				<separatorLayout text="CVV settings" />
+				<fieldLayout fieldId="CvvManualEntry" type="DROPDOWN" />
+				<fieldLayout fieldId="CvvMotoSale" type="DROPDOWN" />
+				<fieldLayout fieldId="CvvMagstripeEntry" type="DROPDOWN" />
+
+				<separatorLayout text="Transactions" />
+				<fieldLayout fieldId="CardSaleEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardPreAuthEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardOfflineSaleEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardRefundEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardVoidEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardVoidPreAuthEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="PreAuthCompOnlineEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="PreAuthCompOfflineEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardMotoSaleEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardMotoRefundEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardMotoPreauthEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardInstalmentSaleEnabled" type="RADIOBUTTON" />
+				
+				<separatorLayout text="Miscellaneous" />
+				<fieldLayout fieldId="LuhnCheckRequired" type="RADIOBUTTON" />
+				<fieldLayout fieldId="ManualEntryEnabled" type="RADIOBUTTON" />
+				<fieldLayout fieldId="CardDccEnabled" type="RADIOBUTTON" />
+			</structureLayout>
+		</container>
+		
+		<container name="Instalments" type="TAB">
+			<structureLayout fieldId="Instalments">
+				<fieldLayout fieldId="InstalmentIndex" type="TEXT" />
+				<fieldLayout fieldId="InstalmentDescription" type="TEXT" />
+				<fieldLayout fieldId="InstalmentOnUSOFFUS" type="DROPDOWN" />
+				<fieldLayout fieldId="InstalmentPeriod" type="TEXT" />
+				<fieldLayout fieldId="InstalmentMinAmount" type="TEXT" />
+				<fieldLayout fieldId="InstalmentMaxAmount" type="TEXT" />
+				<fieldLayout fieldId="InstalmentStartDate" type="TEXT" />
+				<fieldLayout fieldId="InstalmentEndDate" type="TEXT" />
+				<fieldLayout fieldId="InstalmentProgramId" type="TEXT" />
+				<fieldLayout fieldId="InstalmentProductId" type="TEXT" />
+				<fieldLayout fieldId="InstalmentHostIndex" type="DROPDOWN" />
+			</structureLayout>
+		</container>
+		
+		<container name="Amex" type="TAB">
+			<fieldLayout fieldId="AmexOrigin" type="TEXT" />
+			<fieldLayout fieldId="AmexCountryCode" type="TEXT" />
+			<fieldLayout fieldId="AmexRegion" type="TEXT" />
+			<fieldLayout fieldId="AmexRoutingIndicator" type="TEXT" />
+		</container>
+	</layout>
+
+	<output>
+		<customParamFile
+			customClass="com.ingenico.apac.ingestate.custom.RegistryParameterFileOutput">
+			<settings fileType="sqlite" fileName="fdmsconf.db" rootKey="" />
+
+			<!--  TERMINAL -->
+			<fieldOutput fieldId="TerminalBaseCurrencyCode" key="TerminalConfiguration/TerminalBaseCurrency" type="INT" />
+			<fieldOutput fieldId="MinimumAmount" key="TerminalConfiguration/MinimumAmount" type="UINT" />
+			<fieldOutput fieldId="MaximumAmount" key="TerminalConfiguration/MaximumAmount" type="UINT" />
+
+			<fieldOutput fieldId="ReceiptHeaderLine1" key="TerminalConfiguration/ReceiptHeaderLine1" type="STRING" />
+			<fieldOutput fieldId="ReceiptHeaderLine2" key="TerminalConfiguration/ReceiptHeaderLine2" type="STRING" />
+			<fieldOutput fieldId="ReceiptHeaderLine3" key="TerminalConfiguration/ReceiptHeaderLine3" type="STRING" />
+			<fieldOutput fieldId="ReceiptHeaderLine4" key="TerminalConfiguration/ReceiptHeaderLine4" type="STRING" />
+			<fieldOutput fieldId="ReceiptHeaderLine5" key="TerminalConfiguration/ReceiptHeaderLine5" type="STRING" />
+			<fieldOutput fieldId="InstalmentReceiptDescription" key="TerminalConfiguration/InstalmentReceiptDescription" type="STRING" />
+
+			<fieldOutput fieldId="TipProcessingMode" key="TerminalConfiguration/TipProcessing" type="UINT" />
+			<fieldOutput fieldId="TipAdjustMaxNumber" key="TerminalConfiguration/TipAdjustMaxNumber" type="UINT" />
+			<fieldOutput fieldId="TipAdjustMaxVariance" key="TerminalConfiguration/TipAdjustMaxVariance" type="UINT" />
+
+			<fieldOutput fieldId="PreAuthClearPolicy" key="TerminalConfiguration/PreAuthClearPolicy" type="UINT" />
+			<fieldOutput fieldId="PreAuthMaxAge" key="TerminalConfiguration/PreAuthMaxAge" type="UINT" />
+			<fieldOutput fieldId="PreAuthCompletionAllowedVariance" key="TerminalConfiguration/PreAuthCompletionAllowedVariance" type="UINT" />
+
+			<fieldOutput fieldId="SupervisorPassword" key="TerminalConfiguration/SupervisorPassword" type="STRING" />
+			<fieldOutput fieldId="ManagerPassword" key="TerminalConfiguration/ManagerPassword" type="STRING" />
+			<fieldOutput fieldId="VoidPasswordLevel" key="TerminalConfiguration/VoidPasswordLevel" type="UINT" />
+			<fieldOutput fieldId="RefundPasswordLevel" key="TerminalConfiguration/RefundPasswordLevel" type="UINT" />
+			<fieldOutput fieldId="OfflinePasswordLevel" key="TerminalConfiguration/OfflineSalePasswordLevel" type="UINT" />
+			<fieldOutput fieldId="SettlementPasswordLevel" key="TerminalConfiguration/SettlementPasswordLevel" type="UINT" />
+			<fieldOutput fieldId="TleEnabled" key="TerminalConfiguration/TleEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="TerminalIdMasking" key="TerminalConfiguration/TerminalIdMasking" type="STRING" />
+			<fieldOutput fieldId="MerchantIdMasking" key="TerminalConfiguration/MerchantIdMasking" type="STRING" />
+
+			<fieldOutput fieldId="PiggybackEnabled" key="TerminalConfiguration/PiggybackEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="SaleEnabled" key="TerminalConfiguration/TxSaleEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="PreAuthEnabled" key="TerminalConfiguration/TxPreAuthEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="PreAuthCompletionOnlineEnabled" key="TerminalConfiguration/TxPreAuthCompletionOnlineEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="PreAuthCompletionOfflineEnabled" key="TerminalConfiguration/TxPreAuthCompletionOfflineEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="OfflineSaleEnabled" key="TerminalConfiguration/TxOfflineSaleEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="RefundEnabled" key="TerminalConfiguration/TxRefundEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="VoidEnabled" key="TerminalConfiguration/TxVoidEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="VoidPreAuthEnabled" key="TerminalConfiguration/TxVoidPreAuthEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="MotoSaleEnabled" key="TerminalConfiguration/TxMotoSaleEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="MotoRefundEnabled" key="TerminalConfiguration/TxMotoRefundEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="MotoPreauthEnabled" key="TerminalConfiguration/TxMotoPreauthEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="InstalmentSaleEnabled" key="TerminalConfiguration/TxInstalmentSaleEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="SettleAllHostEnabled" key="TerminalConfiguration/TxSettleAllHostEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="EmvEnabled" key="TerminalConfiguration/EmvEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="InstalmentDataToHostEnabled" key="TerminalConfiguration/InstalmentDataToHostEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="DccEnabled" key="TerminalConfiguration/DccEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="DccProviderOption" key="TerminalConfiguration/DccProvider" type="UINT" />
+			<fieldOutput fieldId="DccStaffIdInputEnabled" key="TerminalConfiguration/DccStaffIdInputEnabled" type="BOOLEAN" />
+
+			<fieldOutput fieldId="RefundMaxAmount" key="TerminalConfiguration/RefundMaxAmount" type="UINT" />
+			<fieldOutput fieldId="RefundPasswordFloorLimit" key="TerminalConfiguration/RefundPasswordFloorLimit" type="UINT" />
+			<fieldOutput fieldId="RefundClessEnabled" key="TerminalConfiguration/RefundClessEnabled" type="BOOLEAN" />
+			<fieldOutput fieldId="SaleContactlessEnabled" key="TerminalConfiguration/SaleContactlessEnabled" type="BOOLEAN" />
+
+			<fieldOutput fieldId="OfflineSaleMaxAmount" key="TerminalConfiguration/OfflineSaleMaxAmount" type="UINT" />
+			<fieldOutput fieldId="IdleMessage" key="TerminalConfiguration/IdleMessage" type="STRING" />
+
+			<!-- HOSTS -->
+			<structureOutput fieldId="Hosts" key="HostTable">
+				<fieldOutput fieldId="HostIndex" key="Index" type="UINT" />
+				<fieldOutput fieldId="HostName" key="HostName" type="STRING" />
+				<fieldOutput fieldId="HostProtocol" key="HostProtocol" type="UINT" />
+				<fieldOutput fieldId="CommsHostName" key="CommsHostName" type="STRING" />
+				<fieldOutput fieldId="TerminalId" key="TerminalId" type="STRING" />
+				<fieldOutput fieldId="MerchantId" key="MerchantId" type="STRING" />
+				<fieldOutput fieldId="SettlementTpdu" key="Tpdu" type="STRING" />
+				<fieldOutput fieldId="SettlementNii" key="Nii" type="STRING" />
+				<fieldOutput fieldId="BatchUploadEnabled" key="BatchUploadEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="HostTimeout" key="Timeout" type="UINT" />
+				<fieldOutput fieldId="PreDefinedAuthCode" key="PreDefinedAuthCode" type="STRING" />
+				<fieldOutput fieldId="PredialEnabled" key="PredialEnabled" type="BOOLEAN" />
+			</structureOutput>
+
+			<!-- ISSUERS -->
+			<structureOutput fieldId="Issuers" key="IssuerTable">
+				<fieldOutput fieldId="IssuerIndex" key="Index" type="UINT" />
+				<fieldOutput fieldId="IssuerName" key="IssuerName" type="STRING" />
+				<fieldOutput fieldId="Tpdu" key="Tpdu" type="STRING" />
+				<fieldOutput fieldId="Nii" key="Nii" type="STRING" />
+				<fieldOutput fieldId="PanMaskDisplay" key="PanMaskDisplay" type="STRING" />
+				<fieldOutput fieldId="PanMaskMerchantReceipt" key="PanMaskMerchantReceipt" type="STRING" />
+				<fieldOutput fieldId="PanMaskCustomerReceipt" key="PanMaskCustomerReceipt" type="STRING" />
+				<fieldOutput fieldId="ExpiryDateMaskDisplay" key="ExpiryDateMaskDisplay" type="STRING" />
+				<fieldOutput fieldId="ExpiryDateMaskMerchantReceipt" key="ExpiryDateMaskMerchantReceipt" type="STRING" />
+				<fieldOutput fieldId="ExpiryDateMaskCustomerReceipt" key="ExpiryDateMaskCustomerReceipt" type="STRING" />
+			</structureOutput>
+
+			<!-- CARDS -->
+			<structureOutput fieldId="Cards" key="CardTable">
+				<fieldOutput fieldId="CardIndex" key="Index" type="UINT" />
+				<fieldOutput fieldId="CardIssuerIndex" key="IssuerIndex" type="UINT" />
+
+				<fieldOutput fieldId="PanLowRange" key="PanLowRange" type="STRING" />
+				<fieldOutput fieldId="PanHighRange" key="PanHighRange" type="STRING" />
+				<fieldOutput fieldId="PanMinLength" key="PanMinLength" type="UINT" />
+				<fieldOutput fieldId="PanMaxLength" key="PanMaxLength" type="UINT" />
+
+				<fieldOutput fieldId="CardHostIndex" key="HostIndex" type="UINT" />
+				<fieldOutput fieldId="CardMotoHostIndex" key="MotoHostIndex" type="UINT" />
+
+				<fieldOutput fieldId="FloorLimit" key="FloorLimit" type="UINT" />
+				<fieldOutput fieldId="MotoFloorLimit" key="MotoFloorLimit" type="UINT" />
+				<fieldOutput fieldId="QpsFloorLimit" key="QpsFloorLimit" type="UINT" />
+
+				<fieldOutput fieldId="CvvManualEntry" key="CvvManualEntry" type="UINT" />
+				<fieldOutput fieldId="CvvMotoSale" key="CvvMotoSale" type="UINT" />
+				<fieldOutput fieldId="CvvMagstripeEntry" key="CvvMagstripeEntry" type="UINT" />
+
+				<fieldOutput fieldId="CardSaleEnabled" key="TxSaleEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardPreAuthEnabled" key="TxPreAuthEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardOfflineSaleEnabled" key="TxOfflineSaleEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardRefundEnabled" key="TxRefundEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardVoidEnabled" key="TxVoidEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardVoidPreAuthEnabled" key="TxVoidPreAuthEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="PreAuthCompOnlineEnabled" key="TxPreAuthCompOnlineEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="PreAuthCompOfflineEnabled" key="TxPreAuthCompOfflineEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardMotoSaleEnabled" key="TxMotoSaleEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardMotoRefundEnabled" key="TxMotoRefundEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardMotoPreauthEnabled" key="TxMotoPreauthEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardInstalmentSaleEnabled" key="TxInstalmentSaleEnabled" type="BOOLEAN" />
+				
+				<fieldOutput fieldId="LuhnCheckRequired" key="LuhnCheckRequired" type="BOOLEAN" />
+				<fieldOutput fieldId="ManualEntryEnabled" key="TxManualEntryEnabled" type="BOOLEAN" />
+				<fieldOutput fieldId="CardDccEnabled" key="DccEnabled" type="BOOLEAN" />
+			</structureOutput>
+			
+			<!-- INSTALMENTS -->
+			<structureOutput fieldId="Instalments" key="InstalmentTable">
+				<fieldOutput fieldId="InstalmentIndex" key="InstalmentIndex" type="UINT" />
+				<fieldOutput fieldId="InstalmentDescription" key="Description" type="STRING" />
+				<fieldOutput fieldId="InstalmentOnUSOFFUS" key="InstalmentOnUSOFFUS" type="BOOLEAN" />
+				<fieldOutput fieldId="InstalmentPeriod" key="InstalmentPeriod" type="UINT" />
+				<fieldOutput fieldId="InstalmentMinAmount" key="MinimumAmount" type="UINT" />
+				<fieldOutput fieldId="InstalmentMaxAmount" key="MaximumAmount" type="UINT" />
+				<fieldOutput fieldId="InstalmentStartDate" key="FromDate" type="STRING" />
+				<fieldOutput fieldId="InstalmentEndDate" key="ToDate" type="STRING" />
+				<fieldOutput fieldId="InstalmentProgramId" key="ProgramId" type="STRING" />
+				<fieldOutput fieldId="InstalmentProductId" key="ProductId" type="STRING" />
+				<fieldOutput fieldId="InstalmentHostIndex" key="HostIndex" type="UINT" />
+			</structureOutput>
+			
+			<!-- AMEX -->
+			<fieldOutput fieldId="AmexOrigin" key="AmexConfiguration/AmexOrigin" type="STRING" />
+			<fieldOutput fieldId="AmexCountryCode" key="AmexConfiguration/AmexCountryCode" type="STRING" />
+			<fieldOutput fieldId="AmexRegion" key="AmexConfiguration/AmexRegion" type="STRING" />
+			<fieldOutput fieldId="AmexRoutingIndicator" key="AmexConfiguration/AmexRoutingIndicator" type="STRING" />
+
+		</customParamFile>
+	</output>
+
+</template>

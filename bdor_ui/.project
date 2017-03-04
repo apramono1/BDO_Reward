@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>bdor_ui</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.ingenico.ingedev.telium.fwtplus.core.ingedevTplusBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.ingenico.ingedev.telium.fwtplus.core.teliumFwTplusLibNature</nature>
+		<nature>com.ingenico.ingedev.telium.fwtplus.core.teliumFwTplusNature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.links/projLinks/bdor_batch</name>
+			<type>2</type>
+			<locationURI>com.ingenico.ingedev.filesystem.workspaceLink:/bdor_batch</locationURI>
+		</link>
+		<link>
+			<name>.links/projLinks/cppbase</name>
+			<type>2</type>
+			<locationURI>com.ingenico.ingedev.filesystem.workspaceLink:/cppbase</locationURI>
+		</link>
+		<link>
+			<name>.links/projLinks/stdx</name>
+			<type>2</type>
+			<locationURI>com.ingenico.ingedev.filesystem.workspaceLink:/stdx</locationURI>
+		</link>
+		<link>
+			<name>.links/projLinks/tpcore</name>
+			<type>2</type>
+			<locationURI>com.ingenico.ingedev.filesystem.workspaceLink:/tpcore</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

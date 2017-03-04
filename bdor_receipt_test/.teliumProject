@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?teliumProject version="7.0"?><?ingedev version="8.4.2.0"?><projectDescription activeConfig="GNU_ARM_DEBUG_T2" enableUsingCpp="true" projectType="APP">
+<virtualFolders>
+<virtualFolder name="Other Files" sources="false"/>
+<virtualFolder name="Source Files" sources="true">
+<file generated="false" name="Src\entry.cpp" parentProject=""/>
+<file generated="false" name="Src\version.cpp" parentProject=""/>
+<file generated="false" name="Src\menu.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_other_transaction_test.cpp" parentProject=""/>
+<file generated="false" name="Src\receipt_test_app.cpp" parentProject=""/>
+</virtualFolder>
+<archiveFilesVirtualFolder name="Archive Files"/>
+</virtualFolders>
+<configs>
+<config applicationType="0x6e" asmCpuMode="thumb" binaryName="FDMS_RECEIP" codeBaseAddr="0x10000" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATA006E" defaultTeliumCompatibility="Telium 2" descr="TEST RECEIPT" disassembler="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" linkerCustomOpt="" name="GNU_ARM_DEBUG_T2" projectFamily="receipt" sign="false" useDataFileNamingConvention="true" zip="false">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<dataFiles/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<projectLibraries>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="receipt" parentProject="receipt" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="bdor_receipt" parentProject="bdor_receipt" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="bdor_batch" parentProject="bdor_batch" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="bdor_config" parentProject="bdor_config" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="sqlite" parentProject="sqlite" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="registry_sqlite" parentProject="registry_sqlite" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+</projectLibraries>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<simpleLibraries>
+<simpleLib name="${appli_current_config_toolchain_root_location:\arm-elf\lib\libstdc++.a}"/>
+</simpleLibraries>
+<teliumAddonPackages>
+<teliumAddonPackage package="Telium Addon SQLite" version="1.10.0.00"/>
+<teliumAddonPackage package="APAC_Addon" version="1.5.38"/>
+</teliumAddonPackages>
+<externalSchemes/>
+</config>
+<config applicationType="0x6e" asmCpuMode="thumb" binaryName="FDMS_RECEIP" codeBaseAddr="0x10000" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATA006E" defaultTeliumCompatibility="Telium 2" descr="TEST RECEIPT" disassembler="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" linkerCustomOpt="" name="GNU_ARM_DEBUG_T2_SOURCELIB" projectFamily="receipt" sign="false" useDataFileNamingConvention="true" zip="false">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/atos_receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_receipt/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<dataFiles/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<projectLibraries>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="receipt" parentProject="receipt" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="bdor_receipt" parentProject="bdor_receipt" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+</projectLibraries>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<simpleLibraries>
+<simpleLib name="${appli_current_config_toolchain_root_location:\arm-elf\lib\libstdc++.a}"/>
+</simpleLibraries>
+<teliumAddonPackages>
+<teliumAddonPackage package="APAC_Addon" version="1.5.18"/>
+</teliumAddonPackages>
+<externalSchemes/>
+</config>
+<config applicationType="0x6e" asmCpuMode="thumb" binaryName="ATOS_RECEIP" compiler="gnuArm47v7a" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" dataBinaryFileBaseName="DATA006E" defaultTeliumCompatibility="Telium Tetra" descr="TEST RECEIPT" disassembler="false" enableCPPExceptions="true" gcov="false" gnuOptim="-O0" gprof="false" linkerCustomOpt="" name="GNU_ARM_DEBUG_TETRA" projectFamily="receipt" sign="false" signatureCertificate="PAYMENT" stripEnable="true" stripOpt=" --remove-section=.comment " useDataFileNamingConvention="true" zip="false">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium Tetra"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/atos_receipt/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.4.2.07"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<dataFiles/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<externalSchemes/>
+<projectLibraries>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="receipt" parentProject="receipt" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="atos_receipt" parentProject="atos_receipt" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+</projectLibraries>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<teliumPackageInfo countryCode="000" family="receipt" identifier="110" maintenancePatch="00" majorVersion="00" minorRelease="00" range="00"/>
+<userAsmIncs/>
+</config>
+<config applicationType="0x6e" asmCpuMode="thumb" binaryName="ATOS_RECEIP" codeBaseAddr="0x10000" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATA006E" defaultTeliumCompatibility="Telium 2" descr="TEST RECEIPT" disassembler="false" enableCPPExceptions="true" gnu4StackProtectionMode="ProPolice" gnuOptim="-Os" linkerCustomOpt="" name="GNU_ARM_RELEASE_T2" projectFamily="receipt" sign="false" useDataFileNamingConvention="true" zip="false">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/atos_receipt/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.28.1.02"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<externalSchemes/>
+<projectLibraries>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="receipt" parentProject="receipt" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="atos_receipt" parentProject="atos_receipt" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+</projectLibraries>
+<dataFiles/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<simpleLibraries>
+<simpleLib name="${appli_current_config_toolchain_root_location:\arm-elf\lib\libstdc++.a}"/>
+</simpleLibraries>
+</config>
+<config applicationType="0x6e" asmCpuMode="thumb" binaryName="ATOS_RECEIP" compiler="gnuArm47v7a" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="true" dataBinaryFileBaseName="DATA006E" defaultTeliumCompatibility="Telium Tetra" descr="TEST RECEIPT" enableCPPExceptions="true" gcov="false" gnuOptim="-Os" gprof="false" linkerCustomOpt="" name="GNU_ARM_RELEASE_TETRA" projectFamily="receipt" sign="false" signatureCertificate="PAYMENT" stripEnable="true" stripOpt=" --remove-section=.comment " useDataFileNamingConvention="true" zip="true">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium Tetra"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/atos_receipt/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.6.3.06"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<teliumPackageInfo countryCode="000" family="receipt" identifier="110" maintenancePatch="00" majorVersion="00" minorRelease="00" range="00"/>
+<externalSchemes/>
+<projectLibraries>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="receipt" parentProject="receipt" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="atos_receipt" parentProject="atos_receipt" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+</projectLibraries>
+<dataFiles/>
+<userAsmIncs/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+</config>
+</configs>
+<groupConfigs/>
+</projectDescription>

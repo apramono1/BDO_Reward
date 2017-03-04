@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?teliumProject version="7.0"?><?ingedev version="8.4.2.0"?><projectDescription activeConfig="GNU_ARM_DEBUG_T2_SOURCELIB" enableUsingCpp="true" projectType="APP">
+<virtualFolders>
+<virtualFolder name="Other Files" sources="false"/>
+<virtualFolder name="Source Files" sources="true">
+<file generated="false" name="Src\entry.cpp" parentProject=""/>
+<file generated="false" name="Src\menu_manager.cpp" parentProject=""/>
+<file generated="false" name="Src\payment_app.cpp" parentProject=""/>
+<file generated="false" name="Src\emv_config.cpp" parentProject=""/>
+<file generated="false" name="Src\version.cpp" parentProject=""/>
+<file generated="false" name="Src\acquirer.cpp" parentProject=""/>
+<file generated="false" name="Src\ssl_profile.cpp" parentProject=""/>
+<file generated="false" name="Src\visa_app_config.cpp" parentProject=""/>
+<file generated="false" name="Src\ecr_manager.cpp" parentProject=""/>
+<file generated="false" name="Src\mastercard_app_config.cpp" parentProject=""/>
+<file generated="false" name="Src\jcb_app_config.cpp" parentProject=""/>
+<file generated="false" name="Src\cup_app_config.cpp" parentProject=""/>
+<file generated="false" name="Src\contactless_config.cpp" parentProject=""/>
+<file generated="false" name="Src\paywave_config.cpp" parentProject=""/>
+<file generated="false" name="Src\paypass_config.cpp" parentProject=""/>
+<file generated="false" name="Src\visa_keys.cpp" parentProject=""/>
+<file generated="false" name="Src\mastercard_keys.cpp" parentProject=""/>
+<file generated="false" name="Src\cup_keys.cpp" parentProject=""/>
+<file generated="false" name="Src\jcb_keys.cpp" parentProject=""/>
+<file generated="false" name="Src\jspeedy_config.cpp" parentProject=""/>
+<file generated="false" name="Src\amex_keys.cpp" parentProject=""/>
+<file generated="false" name="Src\amex_app_config.cpp" parentProject=""/>
+<file generated="false" name="Src\expresspay_config.cpp" parentProject=""/>
+<file generated="false" name="Src\ecr_transaction.cpp" parentProject=""/>
+<file generated="false" name="Src\ecr_settlement.cpp" parentProject=""/>
+<file generated="false" name="Src\ecr_duplicate.cpp" parentProject=""/>
+</virtualFolder>
+<archiveFilesVirtualFolder name="Archive Files"/>
+</virtualFolders>
+<configs>
+<config applicationType="0xcf58" asmCpuMode="arm" assemblerCustomOpt="" binaryName="8530800001" codeBaseAddr="0x10000" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="arm" crc="false" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATACF58" defaultTeliumCompatibility="Telium 2" disassembler="false" enableCPPExceptions="false" gnu4StackProtectionMode="none" gnuOptim="-O0" linkerCustomOpt="" name="GNU_ARM_DEBUG_T2_SOURCELIB" projectFamily="FDMS" sign="false" useDataFileNamingConvention="true" zip="false">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="${workspace_loc:/posgate/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_host/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_ui/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_workflows/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/comms_client/ExpInc}"/>
+<userInc value="${workspace_loc:/emv_api/ExpInc}"/>
+<userInc value="${workspace_loc:/idalloc_client/ExpInc}"/>
+<userInc value="${workspace_loc:/iso8583/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="${workspace_loc:/emv_config/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/protobuf-c/ExpInc}"/>
+<userInc value="${workspace_loc:/contactless/ExpInc}"/>
+<userInc value="${workspace_loc:/contactless_config/ExpInc}"/>
+<userInc value="${workspace_loc:/amex_host/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.10.1.01"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<dataFiles/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<projectLibraries>
+<projectLib name="bdor_ui" parentProject="bdor_ui" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="bdor_receipt" parentProject="bdor_receipt" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="bdor_host" parentProject="bdor_host" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="bdor_batch" parentProject="bdor_batch" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="bdor_config" parentProject="bdor_config" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="bdor_workflows" parentProject="bdor_workflows" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="comms_client" parentProject="comms_client" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="emv_api" parentProject="emv_api" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="idalloc_client" parentProject="idalloc_client" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="iso8583" parentProject="iso8583" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="registry" parentProject="registry" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="registry_sqlite" parentProject="registry_sqlite" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="sqlite" parentProject="sqlite" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="stdx" parentProject="stdx" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="emv_config" parentProject="emv_config" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="receipt" parentProject="receipt" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="protobuf-c" parentProject="protobuf-c" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="contactless" parentProject="contactless" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="contactless_config" parentProject="contactless_config" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="amex_host" parentProject="amex_host" projectLibCfg="GNU_ARM_DEBUG_T2_SOURCELIB"/>
+<projectLib name="posgate" parentProject="posgate" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="logger_trace" parentProject="logger_trace" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+</projectLibraries>
+<simpleLibraries>
+<simpleLib name="${appli_current_config_toolchain_root_location:\arm-elf\lib\libstdc++.a}"/>
+</simpleLibraries>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<packageLibraries>
+<packageLib name="EMVAPI_TPlus" package="Easy Path to EMV (EMV API)" version="22.14.1.01"/>
+<packageLib name="SQLITELIB" package="Telium Addon SQLite" version="1.10.0.00"/>
+</packageLibraries>
+<teliumAddonPackages>
+<teliumAddonPackage package="Easy Path to EMV (EMV API)" version="22.14.1.01"/>
+<teliumAddonPackage package="Telium Addon SQLite" version="1.10.0.00"/>
+<teliumAddonPackage package="Easy Path to C'Less" version="5.14.0.02"/>
+</teliumAddonPackages>
+<packageSchemes>
+<packageScheme name="DEBUGSigned\T2\STLList_Tlv.sgn" package="Telium SDK" version="9.30.1.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvCipherDa.sgn" package="Telium SDK" version="9.30.1.02"/>
+</packageSchemes>
+<externalSchemes/>
+<userAsmDefines/>
+</config>
+<config applicationType="0xcf58" asmCpuMode="arm" assemblerCustomOpt="" binaryName="8530800001" compiler="gnuArm47v7a" compilerCustomOpt="-std=c++11" cpuMode="arm" crc="false" dataBinaryFileBaseName="DATACF58" defaultTeliumCompatibility="Telium Tetra" disassembler="false" enableCPPExceptions="true" gcov="false" gnuOptim="-O0" gprof="false" linkerCustomOpt="" name="GNU_ARM_DEBUG_TETRA" projectFamily="FDMS" sign="false" signatureCertificate="PAYMENT" stripEnable="true" stripOpt=" --remove-section=.comment " useDataFileNamingConvention="true" zip="">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium Tetra"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/amex_host/ExpInc}"/>
+<userInc value="${workspace_loc:/posgate/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/iso8583/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/protobuf-c/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/idalloc_client/ExpInc}"/>
+<userInc value="${workspace_loc:/comms_client/ExpInc}"/>
+<userInc value="${workspace_loc:/emv_config/ExpInc}"/>
+<userInc value="${workspace_loc:/emv_api/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_host/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_ui/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_workflows/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/contactless/ExpInc}"/>
+<userInc value="${workspace_loc:/contactless_config/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.10.1.01"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<dataFiles/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmIncs/>
+<userAsmDefines/>
+<externalSchemes/>
+<teliumPackageInfo countryCode="000" family="FDMS" identifier="53080" maintenancePatch="00" majorVersion="00" minorRelease="01" range="00"/>
+<projectLibraries>
+<projectLib name="bdor_ui" parentProject="bdor_ui" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="bdor_receipt" parentProject="bdor_receipt" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="bdor_host" parentProject="bdor_host" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="bdor_batch" parentProject="bdor_batch" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="bdor_config" parentProject="bdor_config" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="bdor_workflows" parentProject="bdor_workflows" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="receipt" parentProject="receipt" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="logger_trace" parentProject="logger_trace" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="registry_sqlite" parentProject="registry_sqlite" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="comms_client" parentProject="comms_client" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="idalloc_client" parentProject="idalloc_client" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="emv_api" parentProject="emv_api" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="emv_config" parentProject="emv_config" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="protobuf-c" parentProject="protobuf-c" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="registry" parentProject="registry" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="sqlite" parentProject="sqlite" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="iso8583" parentProject="iso8583" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="stdx" parentProject="stdx" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="contactless" parentProject="contactless" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="contactless_config" parentProject="contactless_config" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="amex_host" parentProject="amex_host" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+<projectLib name="posgate" parentProject="posgate" projectLibCfg="GNU_ARM_DEBUG_TETRA"/>
+</projectLibraries>
+<teliumAddonPackages>
+<teliumAddonPackage package="Easy Path to EMV (EMV API)" version="30.10.0.02"/>
+<teliumAddonPackage package="Easy Path to C'Less" version="7.4.0.03"/>
+</teliumAddonPackages>
+</config>
+<config applicationType="0xcf58" asmCpuMode="thumb" binaryName="8530800001" codeBaseAddr="0x10000" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATACF58" defaultTeliumCompatibility="Telium 2" disassembler="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-Os" linkerCustomOpt="" name="GNU_ARM_RELEASE_T2" projectFamily="FDMS" sign="false" useDataFileNamingConvention="true" zip="true">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_host/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_ui/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_workflows/ExpInc}"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<userAsmDefines/>
+<simpleLibraries>
+<simpleLib name="${appli_current_config_toolchain_root_location:\arm-elf\lib\libstdc++.a}"/>
+</simpleLibraries>
+<projectLibraries>
+<projectLib name="bdor_ui" parentProject="bdor_ui" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="bdor_receipt" parentProject="bdor_receipt" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="bdor_host" parentProject="bdor_host" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="bdor_batch" parentProject="bdor_batch" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="bdor_config" parentProject="bdor_config" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="bdor_workflows" parentProject="bdor_workflows" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+</projectLibraries>
+<dataFiles/>
+<externalSchemes/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<packageLibraries>
+<packageLib name="EMVAPI_TPlus" package="Easy Path to EMV (EMV API)" version="22.14.1.01"/>
+<packageLib name="SQLITELIB" package="Telium Addon SQLite" version="1.10.0.00"/>
+</packageLibraries>
+<teliumAddonPackages>
+<teliumAddonPackage package="Easy Path to EMV (EMV API)" version="22.14.1.01"/>
+<teliumAddonPackage package="Telium Addon SQLite" version="1.10.0.00"/>
+</teliumAddonPackages>
+<packageIncs>
+<packageInc package="Telium Addon SQLite" version="1.10.0.00"/>
+</packageIncs>
+<packageDefines>
+<packageDefine package="Telium Addon SQLite" version="1.10.0.00"/>
+</packageDefines>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+</config>
+<config applicationType="0xcf58" asmCpuMode="thumb" binaryName="8530800001" compiler="gnuArm47v7a" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" dataBinaryFileBaseName="DATACF58" defaultTeliumCompatibility="Telium Tetra" disassembler="false" enableCPPExceptions="true" gcov="false" gnuOptim="-Os" gprof="false" linkerCustomOpt="" name="GNU_ARM_RELEASE_TETRA" projectFamily="FDMS" sign="false" signatureCertificate="PAYMENT" stripEnable="true" stripOpt=" --remove-section=.comment " useDataFileNamingConvention="true" zip="true">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium Tetra"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/iso8583/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/protobuf-c/ExpInc}"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/idalloc_client/ExpInc}"/>
+<userInc value="${workspace_loc:/comms_client/ExpInc}"/>
+<userInc value="${workspace_loc:/emv_config/ExpInc}"/>
+<userInc value="${workspace_loc:/emv_api/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_config/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_batch/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_receipt/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_host/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_ui/ExpInc}"/>
+<userInc value="${workspace_loc:/bdor_workflows/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="Inc"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.10.1.01"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<userAsmDefines/>
+<dataFiles/>
+<externalSchemes/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<teliumPackageInfo countryCode="000" family="FDMS" identifier="53080" maintenancePatch="00" majorVersion="01" minorRelease="01" range="00"/>
+<projectLibraries>
+<projectLib name="bdor_ui" parentProject="bdor_ui" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="bdor_receipt" parentProject="bdor_receipt" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="bdor_host" parentProject="bdor_host" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="bdor_batch" parentProject="bdor_batch" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="bdor_config" parentProject="bdor_config" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="bdor_workflows" parentProject="bdor_workflows" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="receipt" parentProject="receipt" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="logger_trace" parentProject="logger_trace" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="registry_sqlite" parentProject="registry_sqlite" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="comms_client" parentProject="comms_client" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="idalloc_client" parentProject="idalloc_client" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="emv_api" parentProject="emv_api" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="emv_config" parentProject="emv_config" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="protobuf-c" parentProject="protobuf-c" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="registry" parentProject="registry" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="sqlite" parentProject="sqlite" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="iso8583" parentProject="iso8583" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+<projectLib name="stdx" parentProject="stdx" projectLibCfg="GNU_ARM_RELEASE_TETRA"/>
+</projectLibraries>
+<teliumAddonPackages>
+<teliumAddonPackage package="Easy Path to EMV (EMV API)" version="30.10.0.02"/>
+<teliumAddonPackage package="Easy Path to C'Less" version="7.4.0.03"/>
+</teliumAddonPackages>
+<userAsmIncs/>
+</config>
+</configs>
+<groupConfigs/>
+</projectDescription>

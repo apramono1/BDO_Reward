@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?teliumProject version="7.0"?><?ingedev version="8.4.2.0"?><projectDescription activeConfig="GNU_ARM_DEBUG_TETRA" enableUsingCpp="true" projectType="LIB">
+<virtualFolders>
+<virtualFolder name="Other Files" sources="false"/>
+<virtualFolder name="Source Files" sources="true">
+<file generated="false" name="Src\application_settings.cpp" parentProject=""/>
+<file generated="false" name="Src\card_definition.cpp" parentProject=""/>
+<file generated="false" name="Src\host_definition.cpp" parentProject=""/>
+<file generated="false" name="Src\issuer_definition.cpp" parentProject=""/>
+<file generated="false" name="Src\managed_settings.cpp" parentProject=""/>
+<file generated="false" name="Src\terminal_configuration.cpp" parentProject=""/>
+<file generated="false" name="Src\instalment_definition.cpp" parentProject=""/>
+<file generated="false" name="Src\amex_configuration.cpp" parentProject=""/>
+</virtualFolder>
+</virtualFolders>
+<exportedHeaders>
+<exportedHeader name="ExpInc"/>
+</exportedHeaders>
+<configs>
+<config asmCpuMode="thumb" assemblerCustomOpt="" binaryName="bdor_config" compiler="gnuArm47xbm" compilerCustomOpt="--std=c++11" cpuMode="thumb" crc="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" name="GNU_ARM_DEBUG_T2" sign="false" zip="false">
+<userIncs>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<dataFiles/>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<externalSchemes/>
+<postbuild command="" description=""/>
+<userAsmDefines/>
+<userAsmIncs/>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+<teliumAddonPackages>
+<teliumAddonPackage package="APAC_Addon" version="1.5.38"/>
+</teliumAddonPackages>
+</config>
+<config asmCpuMode="thumb" assemblerCustomOpt="" binaryName="bdor_config" compiler="gnuArm47xbm" compilerCustomOpt="--std=c++11" cpuMode="thumb" crc="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" name="GNU_ARM_DEBUG_T2_SOURCELIB" sign="false" zip="false">
+<userIncs>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<dataFiles/>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<externalSchemes/>
+<postbuild command="" description=""/>
+<userAsmDefines/>
+<userAsmIncs/>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+</config>
+<config asmCpuMode="thumb" binaryName="bdor_config" compiler="gnuArm47v7a" compilerCustomOpt="--std=c++11" cpuMode="thumb" crc="false" enableCPPExceptions="true" gcov="false" gnuOptim="-O0" gprof="false" name="GNU_ARM_DEBUG_TETRA" sign="false" zip="false">
+<userIncs>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<dataFiles/>
+<userAsmIncs/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<externalSchemes/>
+</config>
+<config asmCpuMode="thumb" binaryName="bdor_config" compiler="gnuArm47xbm" compilerCustomOpt="--std=c++11" cpuMode="thumb" enableCPPExceptions="true" gnu4StackProtectionMode="ProPolice" gnuOptim="-Os" name="GNU_ARM_RELEASE_T2">
+<userIncs>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<dataFiles/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<externalSchemes/>
+</config>
+<config asmCpuMode="thumb" binaryName="bdor_config" compiler="gnuArm47v7a" compilerCustomOpt="--std=c++11" cpuMode="thumb" enableCPPExceptions="true" gcov="false" gnuOptim="-Os" gprof="false" name="GNU_ARM_RELEASE_TETRA">
+<userIncs>
+<userInc value="${workspace_loc:/stdx/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+<userInc value="${workspace_loc:/sqlite/ExpInc}"/>
+<userInc value="${workspace_loc:/registry/ExpInc}"/>
+<userInc value="${workspace_loc:/registry_sqlite/ExpInc}"/>
+<userInc value="ExpInc"/>
+<userInc value="Inc"/>
+</userIncs>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+</userDefines>
+<teliumCompatibilities/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<dataFiles/>
+<userAsmIncs/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<externalSchemes/>
+</config>
+</configs>
+<groupConfigs/>
+</projectDescription>

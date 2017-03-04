@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?teliumProject version="7.0"?><?ingedev version="8.4.2.0"?><projectDescription activeConfig="GNU_ARM_DEBUG_T2" enableUsingCpp="true" projectType="APP">
+<virtualFolders>
+<virtualFolder name="Other Files" sources="false"/>
+<virtualFolder name="Source Files" sources="true">
+<file generated="false" name="Src\entry.cpp" parentProject=""/>
+<file generated="false" name="Src\bdor_key_loader_app.cpp" parentProject=""/>
+<file generated="false" name="Src\key_injection.cpp" parentProject=""/>
+<file generated="false" name="Src\menu.cpp" parentProject=""/>
+<file generated="false" name="Src\version.cpp" parentProject=""/>
+</virtualFolder>
+<archiveFilesVirtualFolder name="Archive Files"/>
+</virtualFolders>
+<configs>
+<config applicationType="0x6d" asmCpuMode="thumb" assemblerCustomOpt="" binaryName="FDMSKEYLOAD" codeBaseAddr="0x10000" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATA006D" defaultTeliumCompatibility="Telium 2" descr="FDMS KEY LOADER" disassembler="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" linkerCustomOpt="" name="GNU_ARM_DEBUG_T2" projectFamily="security" sign="false" useDataFileNamingConvention="true" zip="false">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<dataFiles/>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<projectLibraries>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_DEBUG_T2"/>
+</projectLibraries>
+<packageSchemes>
+<packageScheme name="DEBUGSigned\T2\TlvFirstKey.sgn" package="Telium SDK" version="9.30.1.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvFree.sgn" package="Telium SDK" version="9.30.1.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvKeyVerif.sgn" package="Telium SDK" version="9.30.1.02"/>
+</packageSchemes>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<simpleLibraries>
+<simpleLib name="${appli_current_config_toolchain_root_location:\arm-elf\lib\libstdc++.a}"/>
+</simpleLibraries>
+<userAsmDefines/>
+<userAsmIncs/>
+</config>
+<config applicationType="0x6d" asmCpuMode="thumb" assemblerCustomOpt="" binaryName="FDMSKEYLOAD" codeBaseAddr="0x10000" compiler="gnuArm47xbm" compilerCustomOpt="-std=c++11" cpuMode="thumb" crc="false" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATA006D" defaultTeliumCompatibility="Telium 2" descr="FDMS KEY LOADER" disassembler="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-Os" linkerCustomOpt="" name="GNU_ARM_RELEASE_T2" projectFamily="security" sign="false" useDataFileNamingConvention="true" zip="false">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="${workspace_loc:/tpcore/ExpInc}"/>
+<userInc value="${workspace_loc:/versioning/ExpInc}"/>
+<userInc value="${workspace_loc:/cppbase/ExpInc}"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="9.30.1.02"/>
+</teliumSdkPackages>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__OEM_STDINT_DEF_H_INCLUDED__"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<projectLibraries>
+<projectLib name="tpcore" parentProject="tpcore" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="versioning" parentProject="versioning" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+<projectLib name="cppbase" parentProject="cppbase" projectLibCfg="GNU_ARM_RELEASE_T2"/>
+</projectLibraries>
+<packageSchemes>
+<packageScheme name="T2Signed\TlvFirstKey.sgn" package="Telium SDK" version="9.30.1.02"/>
+<packageScheme name="T2Signed\TlvFree.sgn" package="Telium SDK" version="9.30.1.02"/>
+<packageScheme name="T2Signed\TlvKeyVerif.sgn" package="Telium SDK" version="9.30.1.02"/>
+</packageSchemes>
+<dataFiles/>
+<userSystemLibraries/>
+<userSystemLibrariesOptions/>
+<simpleLibraries>
+<simpleLib name="${appli_current_config_toolchain_root_location:\arm-elf\lib\libstdc++.a}"/>
+</simpleLibraries>
+<userAsmDefines/>
+</config>
+</configs>
+<groupConfigs/>
+</projectDescription>
