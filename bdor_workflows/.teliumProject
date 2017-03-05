@@ -42,10 +42,10 @@
 <file generated="false" name="Src\batch_review_workflow.cpp" parentProject=""/>
 <file generated="false" name="Src\batch_total_workflow.cpp" parentProject=""/>
 <file generated="false" name="Src\post_online_activities.cpp" parentProject=""/>
-<file generated="false" name="Src\reward_workflow.cpp" parentProject=""/>
 <file generated="false" name="Src\post_card_validation.cpp" parentProject=""/>
 <file generated="false" name="Src\redemption_workflow.cpp" parentProject=""/>
 <file generated="false" name="Src\lounge_usage.cpp" parentProject=""/>
+<file generated="false" name="Src\card_validation_workflow.cpp" parentProject=""/>
 </virtualFolder>
 </virtualFolders>
 <exportedHeaders>

@@ -2,7 +2,7 @@
  ------------------------------------------------------------------------------
  INGENICO Technical Software Department
  ------------------------------------------------------------------------------
- Copyright (c) 2016 INGENICO S.A.
+ Copyright (c) 2015-2016 INGENICO S.A.
  28-32 boulevard de Grenelle 75015 Paris, France.
  All rights reserved.
  This source program is the property of the INGENICO Company mentioned above
@@ -13,23 +13,34 @@
  embedded copyright and ownership notices in full.
  ------------------------------------------------------------------------------
  */
-#ifndef BDOR__POST_CARD_VALIDATION_H_
-#define BDOR__POST_CARD_VALIDATION_H_
+#ifndef BDOR__CARD_VALIDATION_WORKFLOW_H_
+#define BDOR__CARD_VALIDATION_WORKFLOW_H_
 
-#include <bdor/acquirer.h>
-#include <bdor/ui.h>
+#include <cstdio>
+#include <types/magstripe.h>
+#include <tpcore/pin_entry.h>
+#include <tpcore/telium_event.h>
 #include <bdor/application_settings.h>
-#include <bdor/batch.h>
+#include <bdor/transaction.h>
+#include <bdor/ui.h>
 #include <bdor/host_switch.h>
-#include <bdor/emv_workflow.h>
-#include "post_online_activities.h"
 
 namespace bdor {
 
-bool IsResponseApproved(const std::string& response_code);
-bool IsResponseReceived(const Transaction& tx);
-void ProcessPostCardNonEMVValidation(Transaction& tx, Batch& batch, Acquirer& acquirer, Ui& ui);
-void ProcessPostCardEMVValidation(Transaction& tx, EmvWorkflow& emv_workflow, Batch& batch, Ui& ui, Acquirer& acquirer, HostSwitch& host);
+class CardValidationWorkflow {
+
+ public:
+  CardValidationWorkflow(ApplicationSettings& app_settings, HostSwitch& host, tpcore::PinEntry& pin_entry, Ui& ui);
+  void Start();
+  bool RunManualFlow(Transaction& tx);
+  bool RunMagFlow(types::MagStripe mag_stripe, Transaction& tx);
+
+ private:
+  ApplicationSettings& app_settings_;
+  HostSwitch& host_;
+  tpcore::PinEntry& pin_entry_;
+  Ui& ui_;
+};
 
 }
 

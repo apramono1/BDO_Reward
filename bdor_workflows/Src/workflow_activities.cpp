@@ -393,6 +393,10 @@ bool IsTxEnabled(TerminalConfiguration& terminal_config,
 
     case TransactionType::INSTALMENT_SALE:
       return terminal_config.TxInstalmentSaleEnabled();
+
+    case TransactionType::REWARD:
+          return true;
+
     default:
       return false;
   }
@@ -422,6 +426,9 @@ bool IsTxEnabledPerCard(const CardDefinition& card_definition_config,
 
     case TransactionType::INSTALMENT_SALE:
       return card_definition_config.tx_instalment_sale_enabled;
+
+    case TransactionType::REWARD:
+          return true;
 
     default:
       return false;
